@@ -1,0 +1,11 @@
+services:
+    avathar.bbguild_eq.installer:
+        class: avathar\bbguild_eq\game\eq_installer
+
+    avathar.bbguild_eq.provider:
+        class: avathar\bbguild_eq\game\eq_provider
+        arguments:
+            - '@avathar.bbguild_eq.installer'
+            - '@ext.manager'
+        tags:
+            - { name: bbguild.game_provider }
