@@ -3,7 +3,7 @@ services:
         class: avathar\bbguild_eq\game\eq_installer
         arguments:
             - '@dbal.conn'
-            - '@cache'
+            - '@cache.driver'
             - '@config'
             - '@user'
 

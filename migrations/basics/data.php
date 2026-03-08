@@ -68,7 +68,7 @@ class data extends \phpbb\db\migration\container_aware_migration
 	{
 		return new \avathar\bbguild_eq\game\eq_installer(
 			$this->container->get('dbal.conn'),
-			$this->container->get('cache'),
+			$this->container->get('cache.driver'),
 			$this->container->get('config'),
 			$this->container->get('user')
 		);
