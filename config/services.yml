@@ -1,6 +1,11 @@
 services:
     avathar.bbguild_eq.installer:
         class: avathar\bbguild_eq\game\eq_installer
+        arguments:
+            - '@dbal.conn'
+            - '@cache'
+            - '@config'
+            - '@user'
 
     avathar.bbguild_eq.provider:
         class: avathar\bbguild_eq\game\eq_provider
