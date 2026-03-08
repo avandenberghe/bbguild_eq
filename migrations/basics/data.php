@@ -54,14 +54,24 @@ class data extends \phpbb\db\migration\container_aware_migration
 
 	public function seed_game_data()
 	{
-		$installer = $this->container->get('avathar.bbguild_eq.installer');
+		$installer = $this->get_installer();
 		$installer->install($this->get_table_names(), 'eq', 'EverQuest', '', '', 'us');
 	}
 
 	public function remove_game_data()
 	{
-		$installer = $this->container->get('avathar.bbguild_eq.installer');
+		$installer = $this->get_installer();
 		$installer->uninstall($this->get_table_names(), 'eq', 'EverQuest');
+	}
+
+	private function get_installer()
+	{
+		return new \avathar\bbguild_eq\game\eq_installer(
+			$this->container->get('dbal.conn'),
+			$this->container->get('cache'),
+			$this->container->get('config'),
+			$this->container->get('user')
+		);
 	}
 
 	private function get_table_names()
