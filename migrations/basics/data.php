@@ -48,6 +48,7 @@ class data extends \phpbb\db\migration\container_aware_migration
 	public function revert_data()
 	{
 		return [
+			['custom', [[$this, 'remove_players_and_guilds']]],
 			['custom', [[$this, 'remove_game_data']]],
 		];
 	}
@@ -85,5 +86,38 @@ class data extends \phpbb\db\migration\container_aware_migration
 			'bb_language_table'  => $this->table_prefix . 'bb_language',
 			'bb_players_table'   => $this->table_prefix . 'bb_players',
 		];
+	}
+
+	public function remove_players_and_guilds()
+	{
+		$players_table = $this->table_prefix . 'bb_players';
+		$guild_table = $this->table_prefix . 'bb_guild';
+		$ranks_table = $this->table_prefix . 'bb_ranks';
+		$game_id = 'eq';
+
+		$this->db->sql_query("DELETE FROM $players_table WHERE game_id = '$game_id'");
+
+		$sql = "SELECT g.id FROM $guild_table g
+			WHERE g.id > 0
+			AND g.game_id = '$game_id'
+			AND NOT EXISTS (
+				SELECT 1 FROM $players_table p
+				WHERE p.player_guild_id = g.id AND p.game_id <> '$game_id'
+			)";
+		$result = $this->db->sql_query($sql);
+		$guild_ids = array();
+		while ($row = $this->db->sql_fetchrow($result))
+		{
+			$guild_ids[] = (int) $row['id'];
+		}
+		$this->db->sql_freeresult($result);
+
+		if (!empty($guild_ids))
+		{
+			$this->db->sql_query('DELETE FROM ' . $ranks_table .
+				' WHERE ' . $this->db->sql_in_set('guild_id', $guild_ids));
+			$this->db->sql_query('DELETE FROM ' . $guild_table .
+				' WHERE ' . $this->db->sql_in_set('id', $guild_ids));
+		}
 	}
 }
