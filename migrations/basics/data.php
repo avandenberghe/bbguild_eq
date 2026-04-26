@@ -5,12 +5,12 @@
  * Seeds EverQuest factions, classes, races, and roles
  * by calling the existing installer service.
  *
- * @package   avathar\bbguild_eq
+ * @package   avathar\bbguildeq
  * @copyright 2018 avathar.be
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  */
 
-namespace avathar\bbguild_eq\migrations\basics;
+namespace avathar\bbguildeq\migrations\basics;
 
 class data extends \phpbb\db\migration\container_aware_migration
 {
@@ -67,7 +67,7 @@ class data extends \phpbb\db\migration\container_aware_migration
 
 	private function get_installer()
 	{
-		return new \avathar\bbguild_eq\game\eq_installer(
+		return new \avathar\bbguildeq\game\eq_installer(
 			$this->container->get('dbal.conn'),
 			$this->container->get('cache.driver'),
 			$this->container->get('config'),

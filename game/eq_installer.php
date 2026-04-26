@@ -4,12 +4,12 @@
  *
  * Installs EverQuest factions, classes, races, and roles.
  *
- * @package   bbguild_eq v2.0
+ * @package   bbguildeq v2.0
  * @copyright 2018 avathar.be
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  */
 
-namespace avathar\bbguild_eq\game;
+namespace avathar\bbguildeq\game;
 
 use avathar\bbguild\model\games\abstract_game_install;
 

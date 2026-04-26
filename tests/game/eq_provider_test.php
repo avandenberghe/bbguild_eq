@@ -5,11 +5,11 @@
  * @license GNU General Public License, version 2 (GPL-2.0)
  */
 
-namespace avathar\bbguild_eq\tests\game;
+namespace avathar\bbguildeq\tests\game;
 
 use PHPUnit\Framework\TestCase;
-use avathar\bbguild_eq\game\eq_provider;
-use avathar\bbguild_eq\game\eq_installer;
+use avathar\bbguildeq\game\eq_provider;
+use avathar\bbguildeq\game\eq_installer;
 
 class eq_provider_test extends TestCase
 {
@@ -28,7 +28,7 @@ class eq_provider_test extends TestCase
 			->disableOriginalConstructor()
 			->getMock();
 		$ext_manager->method('get_extension_path')
-			->willReturn('ext/avathar/bbguild_eq/');
+			->willReturn('ext/avathar/bbguildeq/');
 
 		$this->provider = new eq_provider($installer, $ext_manager);
 	}
@@ -56,7 +56,7 @@ class eq_provider_test extends TestCase
 
 	public function test_images_path(): void
 	{
-		$this->assertStringContainsString('bbguild_eq', $this->provider->get_images_path());
+		$this->assertStringContainsString('bbguildeq', $this->provider->get_images_path());
 		$this->assertStringEndsWith('images/', $this->provider->get_images_path());
 	}
 
