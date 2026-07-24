@@ -3,7 +3,7 @@
 
 **Version:** [![Latest Stable Version](https://img.shields.io/github/v/release/avatharbe/bbguildeq)](https://github.com/avatharbe/bbguildeq/releases)   
   
-Game plugin that adds EverQuest support to [bbGuild](https://github.com/avatharbe/bbguild).
+EverQuest is where guild-management tools like this one started in the first place — bbGuild itself was originally forked from EQDKP back in 2008, before it ever supported any other game, so this plugin is closer to bbGuild's roots than any other in the family. bbguildeq brings all 17 classes and 17 races into your guild's roster, with the Good/Evil/Neutral alignment system that's shaped EQ guild politics since 1999, and boss/zone links straight to EQ Allakhazam so raid planning doesn't mean tabbing out to another site. If your guild has been running progression or classic servers for years, this gives that roster a real home on the forum you already have.
 
 ## Features
 
