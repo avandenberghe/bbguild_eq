@@ -3,7 +3,7 @@
 
 **Version:** [![Latest Stable Version](https://img.shields.io/github/v/release/avatharbe/bbguildeq)](https://github.com/avatharbe/bbguildeq/releases)   
   
-Game plugin that adds EverQuest support to [bbGuild](https://github.com/avandenberghe/bbguild).
+Game plugin that adds EverQuest support to [bbGuild](https://github.com/avatharbe/bbguild).
 
 ## Features
 
@@ -15,7 +15,7 @@ Game plugin that adds EverQuest support to [bbGuild](https://github.com/avandenb
 ## Requirements
 
 - phpBB >= 3.3.0
-- PHP >= 7.4.0
+- PHP >= 8.1.0
 - **bbGuild core** (`avathar/bbguild`) must be installed and enabled
 
 ## Installation
@@ -76,6 +76,6 @@ Barbarian, Dark Elf, Drakkin, Dwarf, Erudite, Froglok, Gnome, Half Elf, Halfling
 
 ## Links
 
-- [bbGuild Core](https://github.com/avandenberghe/bbguild)
+- [bbGuild Core](https://github.com/avatharbe/bbguild)
 - [EQ Allakhazam](http://everquest.allakhazam.com/)
-- [Issue Tracker](https://github.com/avandenberghe/bbguild/issues)
+- [Issue Tracker](https://github.com/avatharbe/bbguildeq/issues)
