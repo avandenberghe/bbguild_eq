@@ -6,12 +6,12 @@
 
 **Version:** [![Latest Stable Version](https://img.shields.io/github/v/release/avatharbe/bbguildeq)](https://github.com/avatharbe/bbguildeq/releases)   
   
-EverQuest is where guild-management tools like this one started in the first place — bbGuild itself was originally forked from EQDKP back in 2008, before it ever supported any other game, so this plugin is closer to bbGuild's roots than any other in the family. bbguildeq brings all 17 classes and 17 races into your guild's roster, with the Good/Evil/Neutral alignment system that's shaped EQ guild politics since 1999, and boss/zone links straight to EQ Allakhazam so raid planning doesn't mean tabbing out to another site. If your guild has been running progression or classic servers for years, this gives that roster a real home on the forum you already have.
+EverQuest is where guild-management tools like this one started in the first place — bbGuild itself was originally forked from EQDKP back in 2008, before it ever supported any other game, so this plugin is closer to bbGuild's roots than any other in the family. bbguildeq brings all 16 classes and 16 races into your guild's roster, with the Good/Evil/Neutral alignment system that's shaped EQ guild politics since 1999, and boss/zone links straight to EQ Allakhazam so raid planning doesn't mean tabbing out to another site. If your guild has been running progression or classic servers for years, this gives that roster a real home on the forum you already have.
 
 ## Features
 
-- **EQ Classes** - 17 playable classes (Bard, Beastlord, Berserker, Cleric, Druid, Enchanter, Magician, Monk, Necromancer, Paladin, Ranger, Rogue, Shadowknight, Shaman, Warrior, Wizard) with color codes
-- **EQ Races** - 17 playable races (Barbarian, Dark Elf, Drakkin, Dwarf, Erudite, Froglok, Gnome, Half Elf, Halfling, High Elf, Human, Iksar, Ogre, Troll, Vah Shir, Wood Elf)
+- **EQ Classes** - 16 playable classes (Bard, Beastlord, Berserker, Cleric, Druid, Enchanter, Magician, Monk, Necromancer, Paladin, Ranger, Rogue, Shadowknight, Shaman, Warrior, Wizard) with color codes
+- **EQ Races** - 16 playable races (Barbarian, Dark Elf, Drakkin, Dwarf, Erudite, Froglok, Gnome, Half Elf, Halfling, High Elf, Human, Iksar, Ogre, Troll, Vah Shir, Wood Elf)
 - **Factions** - Good, Evil, and Neutral alignments
 - **Allakhazam Links** - Boss and zone database URLs linked to EQ Allakhazam
 
@@ -47,7 +47,7 @@ EverQuest is where guild-management tools like this one started in the first pla
 | 2 | Evil |
 | 3 | Neutral |
 
-### Classes (17)
+### Classes (16)
 
 | ID | Class | Armor |
 |----|-------|-------|
@@ -69,7 +69,7 @@ EverQuest is where guild-management tools like this one started in the first pla
 | 15 | Warrior | Plate |
 | 16 | Wizard | Cloth |
 
-### Races (17)
+### Races (16)
 
 Barbarian, Dark Elf, Drakkin, Dwarf, Erudite, Froglok, Gnome, Half Elf, Halfling, High Elf, Human, Iksar, Ogre, Troll, Vah Shir, Wood Elf
 
