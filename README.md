@@ -1,4 +1,7 @@
 # bbGuild - EverQuest
+
+**Current version:** 2.0.0-rc1 (release candidate)
+
 [![Tests](https://github.com/avatharbe/bbguildeq/actions/workflows/tests.yml/badge.svg)](https://github.com/avatharbe/bbguildeq/actions/workflows/tests.yml)
 
 **Version:** [![Latest Stable Version](https://img.shields.io/github/v/release/avatharbe/bbguildeq)](https://github.com/avatharbe/bbguildeq/releases)   
