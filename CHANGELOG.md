@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.0-rc2 25/07/2026
+  - [DOCS] Verified game data against current EverQuest — all 16 classes and 16 races present and current. Corrected the README class/race counts from 17 to 16 (the extra count was the Unknown placeholder). (#2)
+
 ## 2.0.0-rc1 24/07/2026
   - [FIX] Migration dependency pointed at a since-removed bbguild core migration path (`basics\schema`, squashed into `v200b3` in an earlier core release) — this plugin could not install at all against current core
   - [FIX] `get_table_names()` was missing `bb_specializations_table`, which would have silently blocked any future specialization seeding (issue #331 Phase 4)
